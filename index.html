@@ -46,6 +46,25 @@ DUCON INDUSTRIES
 <h2>Contact</h2>
 <p>Email: info@ducon.com</p>
 </section>
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DgL00000COtUI',
+				'GitHub_Ducon_AF',
+				'https://orgfarm-8bbdb64c63-dev-ed.develop.my.site.com/ESWGitHubDuconAF1772754157927',
+				{
+					scrt2URL: 'https://orgfarm-8bbdb64c63-dev-ed.develop.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://orgfarm-8bbdb64c63-dev-ed.develop.my.site.com/ESWGitHubDuconAF1772754157927/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 
 </body>
 </html>
